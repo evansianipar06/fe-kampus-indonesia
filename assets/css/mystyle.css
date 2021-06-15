@@ -1,0 +1,1010 @@
+/* CSS By : Evan Richardo Sianipar */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&amp;display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.dropdown-item:hover {
+    border-radius: 5px;
+    color: white;
+    background-color: #14375e;
+    width: auto;
+    height: 30px;
+}
+
+#buttonDaftar {
+    width: 100px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    background: #14375E;
+    height: 33.33px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#buttonMasuk {
+    width: 56px;
+    height: 23px;
+    color: #002E6D;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 18px;
+    border: none;
+    margin-right: 30px;
+    background: transparent;
+}
+
+.bagian-1 {
+    margin-top: 5%;
+    height: 900px;
+    width: 100%;
+    background-image: url("../images/bg1.png");
+}
+
+.bagian-1 p {
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 46, 109, 0.75);
+}
+
+.bagian-1 h3 {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    color: #002E6D;
+}
+
+.keterangan {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.ilus-2 {
+    margin-left: 10px;
+}
+
+#bulats1 {
+    margin-top: 60px;
+}
+
+#bulats2 {
+    margin-top: 300px;
+}
+
+#container-cari {
+    width: 100%;
+    text-align: center;
+}
+
+#container-cari button {
+    background: transparent;
+    border: none;
+}
+
+#box-cari {
+    width: 350px;
+    height: 55px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 2px solid #002E6D;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 46, 109, 0.15);
+    border-radius: 50px;
+    padding-left: 5%;
+}
+
+#box-cari:focus {
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 46, 109, 0.15);
+    border-radius: 50px !important;
+
+}
+
+#box-cari::-webkit-input-placeholder {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    color: #002E6D;
+}
+
+#container-info {
+    display: flex;
+    flex-wrap: wrap;
+    left: 352px;
+    top: -100px;
+    width: 350px;
+    height: 280px;
+    margin-top: 50px;
+    margin-left: -5px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 0px 0px 50px;
+}
+
+.container-info-item h6 {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42.19px;
+    color: #002e6d;
+    padding-left: 20px;
+}
+
+
+.container-info-item p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 17.07px;
+    color: #002e6d;
+    padding-left: 20px;
+
+}
+
+.container-rekomen {
+    display: flex;
+    flex-wrap: wrap;
+    left: 352px;
+    width: 100%;
+    margin-bottom: 100px;
+    height: 280px;
+    margin-left: -5px;
+    background-color: #ffffff;
+    box-shadow: 1000px 1000px 1000px #006aff;
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px 0px 0px 50px;
+}
+
+.recomendation-container h4 {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-style: normal;
+    line-height: 30px;
+    position: relative;
+    left: 25px;
+}
+
+.recomendation-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.p1 {
+    width: 300px;
+    height: 450px;
+}
+
+.p2 {
+    width: 450px;
+    height: 450px;
+}
+
+
+@media(min-width:321px) and (max-width: 425px) {
+    .keterangan h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .keterangan p {
+        font-size: 13px;
+    }
+
+    .p1 {
+        display: none;
+    }
+
+    .p2 {
+        display: none;
+    }
+
+    #box-cari {
+        width: 290px;
+        margin-left: 23px;
+    }
+
+
+    #container-info {
+        margin-left: 15px;
+    }
+
+    .container-rekomen {
+        margin-top: 30px;
+    }
+
+    .bagian-1 {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+
+    #bulats2 {
+        display: none;
+    }
+
+
+    #fitur2 {
+        display: none;
+    }
+
+    .recomendation-container {
+        /* position: relative; */
+        top: 50px;
+    }
+
+    #myTab {
+        margin-left: -40px;
+        width: 100%;
+    }
+
+    #home {
+        width: 100%;
+        margin-left: -40px;
+    }
+
+
+    #judul h4 {
+        font-size: 14pt;
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+
+    #judul1 h4 {
+        display: none;
+    }
+
+    .kampus-card {
+        display: grid;
+        grid-column: span 8;
+        margin: 10px 0;
+        border-radius: 15px;
+        position: relative;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    }
+
+    .ilus-1 {
+        width: 30px;
+    }
+
+    .rekomendasi-kampus-terbaik {
+        margin-top: -30px;
+        flex-direction: column;
+    }
+
+    #card2 {
+        margin-right: 80px;
+    }
+
+    #judul {
+        margin-bottom: 30px;
+    }
+
+    .slider {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .kampus-card {
+        display: grid;
+        flex-direction: column;
+    }
+
+    footer {
+        display: block;
+        position: relative;
+        top: 200px;
+        height: 900px;
+        clear: both;
+    }
+
+    .section {
+        text-align: center;
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+}
+
+.lihat-semua-kampus {
+    color: #00216d;
+    font-weight: bold;
+    margin-left: 85px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.fitur {
+    display: flex;
+    margin-left: 15px;
+    height: 160px;
+    width: 95%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 2px rgba(14, 82, 184, 0.8);
+    border-radius: 30px;
+    margin-bottom: 70px;
+    padding-left: 8%;
+    justify-content: center;
+}
+
+.test {
+    background: transparent;
+}
+
+.fitur-card {
+    flex-direction: row;
+    background-color: #0072b4;
+    margin-top: 21px;
+    margin-right: 10%;
+    margin-bottom: 100px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 3px 10px rgba(15, 6, 6, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fitur-card:hover {
+    background-color: #00216d;
+}
+
+#f1 {
+    color: white;
+    margin: 17px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+
+.capt {
+    color: #00216d;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #00216d;
+    font-weight: bold;
+}
+
+
+.rekomendasi-kampus-terbaik {
+    display: flex;
+}
+
+.kampus-card {
+    flex-direction: row;
+    width: 246px;
+    height: 357px;
+    margin-right: 15px;
+    margin-left: 25px;
+    padding: 10px 11px 4px 11px;
+    box-shadow: 0px 3px 10px rgba(15, 6, 6, 0.1);
+    border-radius: 10px;
+    margin-top: 21px;
+}
+
+.kampus-card #search-icon {
+    left: 83px;
+    top: 120px;
+    position: relative;
+}
+
+.kampus-card #more-search {
+    position: relative;
+    top: 140px;
+}
+
+.ava-campus {
+    width: 224px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#kampus1 {
+    background-image: url('../images/itdel.jpg');
+}
+
+#kampus2 {
+    background-image: url('../images/UGM.png');
+}
+
+#kampus3 {
+    background-image: url('../images/ITB.png');
+}
+
+.like-button {
+    left: 170px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+#liked {
+    color: #002e6d;
+}
+
+.logo-kampus {
+    position: relative;
+    top: 100px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+.label-akreditasi {
+    background-color: #0072b4;
+    border-radius: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+    left: 120px;
+    top: 10px;
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.label-info {
+    position: relative;
+    top: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    width: 100px;
+    height: 25px;
+    background-color: #0072b4;
+    border-radius: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.Nama-kampus {
+    font-size: 16px;
+    line-height: 22px;
+    color: #00216d;
+    padding-top: 20px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.lihat-detail {
+    font-size: 14px;
+    line-height: 17.5px;
+    color: white;
+    border: none;
+    width: 224px;
+    height: 46px;
+    background-color: #002e6d;
+    border-radius: 10px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+}
+
+.lihat-detail:hover {
+    background-color: #0072b4;
+    font-size: 16px;
+}
+
+.teks-lihat {
+    transform: scale(1.5);
+}
+
+/*Lined*/
+.section-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.section-title--lighter {
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+}
+
+.section-title--lined.big-title {
+    color: #00216d;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section-title--lined {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.section-title--lined:after {
+    content: '';
+    display: block;
+    max-width: 100px;
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    background: #0072b4;
+    position: relative;
+}
+
+.kampus-populer {
+    margin-top: 50px;
+}
+
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 1rem 4vw;
+    padding: 0;
+    margin-left: 21px;
+    list-style-type: none;
+}
+
+.card {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.card__image {
+    width: 100%;
+    height: 300px;
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0px;
+    background-color: var(--surface-color);
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.card__arc path {
+    fill: var(--surface-color);
+}
+
+
+.card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nama-kota {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #002e6d;
+}
+
+.card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";
+    font-size: 12px;
+    color: #D7BDCA;
+}
+
+.card__status {
+    font-size: 12pt;
+    color: #D7BDCA;
+}
+
+.card__description {
+    padding: 0px 0px 0px 30px;
+    margin-top: 0px;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.bagian-3 {
+    background-image: url('../images/Rectangle57.png');
+    top: 50px;
+    width: 100%;
+    height: 480px;
+}
+
+.info-seminar-beasiswa {
+    margin-top: 50px;
+}
+
+.tab-info {
+    margin-left: 25px;
+    width: 93%;
+}
+
+.slider {
+    max-width: 1100px;
+    display: flex;
+}
+
+.slider .card {
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+}
+
+.slider .card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+}
+
+.card .content .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card .content .sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+.card .content p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.card .content .btn {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.card .content .btn button {
+    background: #002e6d;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card .content .btn button:hover {
+    transform: scale(0.9);
+}
+
+.judul-info {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.artikel {
+    margin-top: 50px;
+}
+
+.new-artikel {
+    margin-left: 25px;
+}
+
+.label-artikel {
+    position: relative;
+    top: 10px;
+    width: 100px;
+    height: 25px;
+    background-color: #db9539;
+    border-radius: 5px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.judul-artikel {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.faq-s {
+    margin-top: 50px;
+}
+
+.faq-item {
+    margin-left: 25px;
+}
+
+.faq-heading {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 20px;
+    text-indent: 20px;
+    margin-top: 20px;
+    color: #002e6d;
+}
+
+.faq-text {
+    font-family: Open Sans;
+    font-weight: 400;
+    color: #919191;
+    width: 95%;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.faq {
+    width: 94%;
+    background: white;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #aad6f0;
+}
+
+.faq label {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 56px;
+    padding-top: 1px;
+    background-color: #aad6f0;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.faq input[type="checkbox"] {
+    display: none;
+}
+
+.faq .faq-arrow {
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    border-top: 2px solid rgba(0, 0, 0, 0.33);
+    border-right: 2px solid rgba(0, 0, 0, 0.33);
+    float: right;
+    position: relative;
+    top: -30px;
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.faq input[type="checkbox"]:checked+label>.faq-arrow {
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.faq input[type="checkbox"]:checked+label {
+    display: block;
+    background: rgba(255, 255, 255, 255) !important;
+    color: #4f7351;
+    height: 130px;
+    transition: height 0.8s;
+    /* -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+}
+
+.faq input[type='checkbox']:not(:checked)+label {
+    display: block;
+    transition: height 0.8s;
+    height: 60px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    top: 30px;
+    width: 110%;
+    margin-left: -45px;
+    height: 450px;
+    background-color: #14375e;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+}
+
+.section {
+    flex-direction: column;
+    margin: auto;
+}
+
+.section h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    color: white;
+
+}
+
+.section p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+}
+
+.section h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.section ul li {
+    list-style: none;
+}
+
+.section ul {
+    padding-left: 0px;
+}
+
+.section ul li a {
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.article-in-mobile {
+    display: none;
+}
+
+.partnership-mobile {
+    display: none;
+}
+
+.lupa {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+#lupa-password {
+    text-decoration: none;
+    color: #14375E;
+}
+
+.btnMasuk {
+    border-radius: 5px;
+    border: none;
+    background: #14375E;
+    height: 35px;
+    margin-bottom: 20px;
+    width: 100px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.btnDaftar {
+    border-radius: 5px;
+    border: none;
+    background: #14375E;
+    height: 35px;
+    margin-bottom: 20px;
+    width: 100px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.btnGoogle {
+    border-radius: 5px;
+    background: #ffffff;
+    height: 35px;
+    width: 100px;
+    color: #ffffff;
+    border: 1px solid #dadada;
+}
+
+.btnGoogle:hover {
+    border-radius: 5px;
+    border: none;
+    background: #e4e4e4;
+    height: 35px;
+    width: 100px;
+    color: #ffffff;
+}
+
+.modal-footer,
+.a {
+    text-align: center;
+    margin-left: 0px;
+    justify-content: left;
+    font-size: 13px;
+    color: #14375E;
+}
+
+/* CSS By : Evan Richardo Sianipar */

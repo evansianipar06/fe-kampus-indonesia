@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+
+  <title>Kampus Indonesia</title>
+
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;family=Roboto&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- Caraosel -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="assets/css/aos.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link menu active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Fitur
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Cari Kampus/Prodi</a>
+              <a class="dropdown-item" href="#">Cari Event</a>
+              <a class="dropdown-item" href="#">Cari Beasiswa</a>
+              <a class="dropdown-item" href="#">Cari Magang</a>
+              <a class="dropdown-item" href="#">Cari Artikel</a>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu" href="#">Hubungi Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu" href="#">Blog</a>
+          </li>
+        </ul>
+        <form class="button-container">
+          <button type="button" id="buttonMasuk" data-bs-toggle="modal" data-bs-target="#loginAcc">Masuk</button>
+          <button type="button" id="buttonDaftar" data-bs-toggle="modal" data-bs-target="#daftarAcc">Daftar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal Login -->
+  <div class="modal fade" id="loginAcc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel"><strong>Masuk</strong></h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="email">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"><strong> Email </strong></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Alamat Email">
+              </div>
+              <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Password">
+              </div>
+              <div class="lupa">
+                <a href="#" class="form-check-label" for="exampleCheck1" id="lupa-password">Lupa Password ?</a>
+              </div>
+              <button type="submit" class="btnMasuk">Masuk</button>
+              <br>
+              <label style="margin-right: 20px;">Atau Masuk Dengan</label>
+              <button class="btnGoogle" style="margin-right: 20px;"><img src="assets/images/google.png" width="60px"
+                  height="20px"></button>
+              <button class="btnGoogle" style="margin-right: 20px; margin-bottom: 20px"><img
+                  src="assets/images/facebook.png" width="80px" height="20px"></button>
+              <br>
+              <label style="margin-right: 20px;">Belum Punya Akun ? Ayo <a href="#"
+                  style="color: #14375E;"><strong>Daftar</strong></a></label>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>Dengan melakukan login, Anda setuju dengan <a href="#">syarat & ketentuan Kampus Indonesia.</a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal Daftar -->
+  <div class="modal fade" id="daftarAcc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel"><strong>Daftar</strong></h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="email">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"><strong> Email </strong></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Alamat Email">
+              </div>
+              <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Password">
+              </div>
+              <label for="exampleInputPassword1" class="form-label"><strong>Ketik Ulang Password</strong></label>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1"
+                  placeholder="Ketik Ulang Password">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Dengan membuat akun, Anda telah menyetujui Syarat dan Ketentuan yang berlaku.
+                </label>
+              </div><br>
+              <button type="submit" class="btnDaftar">Daftar</button>
+              <br>
+              <label style="margin-right: 20px;">Atau Daftar Dengan</label>
+              <button class="btnGoogle" style="margin-right: 20px;"><img src="assets/images/google.png" width="60px"
+                  height="20px"></button>
+              <button class="btnGoogle" style="margin-right: 20px; margin-bottom: 20px"><img
+                  src="assets/images/facebook.png" width="80px" height="20px"></button>
+              <br>
+              <label style="margin-right: 20px;">Sudah Punya Akun ? Ayo <a href="#"
+                  style="color: #14375E;"><strong>Login</strong></a></label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bagian 1 -->
+  <div class="bagian-1" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2" data-aos="fade-right">
+          <img id="bulats1" src="assets/images/bulats.png" width="202px" height="32px">
+        </div>
+        <div class="col-md-8 col-xs-12">
+          <div class="keterangan">
+            <h3 data-aos="fade-down">Dapatkan Informasi <br> seputar Dunia Perkuliahan</h3>
+            <p data-aos="fade-up">Bingung Cari Informasi Seputar Kuliah ? Cari Disini Aja!<br>
+              Kamu akan mendapatkan informasi seputar <br>dunia Perkuliahan terupdate dari kami <br>melalui aplikasi
+              <strong>Kampus Indonesia</strong>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-2" data-aos="fade-left">
+          <img id="bulats2" src="assets/images/bulats.png" width="202px" height="32px">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="ilus-1">
+            <img src="assets/images/p1.png" class="p1">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <table>
+            <tr>
+              <div id="container-cari" data-aos="fade-up">
+                <td><input type="search" id="box-cari" placeholder="Cari Informasi ..."></td>
+                <td id="container-cari"><button type="button"><img src="assets/images/search.png" width="30px"
+                      height="30px"></button></td>
+              </div>
+            </tr>
+          </table>
+          <div id="container-info">
+            <table>
+              <tr>
+                <td class="container-info-item"> <img src="assets/images/u1.png"></td>
+                <td class="container-info-item">
+                  <h6>1045</h6>
+                  <p>Jumlah Kampus yang Terdata Saat Ini Oleh Kampus Indonesia</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="container-info-item2"> <img src="assets/images/u1.png"></td>
+                <td class="container-info-item">
+                  <h6>113</h6>
+                  <p>Jumlah Kampus yang <br>Sudah Terdaftar di Pintara</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ilus-2">
+            <img src="assets/images/p2.png" class="p2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-rekomen">
+      <div class="recomendation-container">
+
+        <!-- Fitur -->
+        <div class="row" data-aos="fade-up" id="judul1">
+          <div class="col-md-12">
+            <h4 class="section-title--lined big-title" >
+              <div id="app-1">
+                {{ judul }}
+              </div>
+            </h4>
+          </div>
+        </div>
+
+        <div class="rekomendasi-kampus-terbaik">
+          <div class="fitur" id="fitur2">
+            <div class="fitur-card" data-aos="fade-up">
+              <a href=""><i class="fas fa-building fa-2x" id="f1"></i></a>
+              <a href="#" class="capt">Kampus </a>
+            </div>
+
+            <div class="fitur-card" data-aos="fade-down">
+              <a href=""><i class="fas fa-medal fa-2x" id="f1"></i></a>
+              <a href="#" class="capt">Beasiswa </a>
+            </div>
+
+            <div class="fitur-card" data-aos="fade-up">
+              <a href=""><i class="fas fa-users fa-2x" id="f1"></i></a>
+              <a href="#" class="capt">Seminar </a>
+            </div>
+
+            <div class="fitur-card" data-aos="fade-down">
+              <a href=""><i class="fas fa-trophy fa-2x" id="f1"></i></a>
+              <a href="#" class="capt">Lomba </a>
+            </div>
+
+            <div class="fitur-card" data-aos="fade-up">
+              <a href="#"><i class="fas fa-briefcase fa-2x" id="f1"></i></a>
+              <a href="#" class="capt">Lowongan </a>
+            </div>
+
+            <div class="fitur-card" data-aos="fade-down">
+              <a href=""><i class="fas fa-book-reader fa-2x" id="f1"></i></a>
+              <a href="#" class="capt">UTBK </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rekomendasi Kampus -->
+        <div class="row" id="judul">
+          <div class="col-md-9" data-aos="fade-up">
+            <h4 class="section-title--lined big-title">
+              <div id="app-2">
+                {{ judul }}
+              </div>
+            </h4>
+          </div>
+          <div class="col-md-3" data-aos="fade-up">
+            <a href="#" class="lihat-semua-kampus">Lihat semua <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="rekomendasi-kampus-terbaik">
+          <div class="kampus-card" data-aos="fade-right">
+            <div class="ava-campus" id="kampus1">
+              <button type="button" class="like-button">
+                <i class="fas fa-heart" id="liked"></i>
+              </button>
+              <img class="logo-kampus" src="assets/images/logodel.png">
+            </div>
+
+            <h6 class="label-akreditasi">
+              Akreditasi : B
+            </h6>
+            <h5 class="Nama-kampus">
+              Institut Teknologi Del
+            </h5>
+            <p class="title-kampus">
+              <i class="fas fa-medal" id="medal"></i> Swasta
+            </p>
+            <button type="button" class="lihat-detail">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+          <div class="kampus-card" data-aos="fade-right">
+            <div class="ava-campus" id="kampus2">
+              <button type="button" class="like-button">
+                <i class="far fa-heart"></i>
+              </button>
+              <img class="logo-kampus" src="assets/images/logougm.png">
+            </div>
+
+            <h6 class="label-akreditasi">
+              Akreditasi : A
+            </h6>
+            <h5 class="Nama-kampus">
+              Universitas Gadjah Mada
+            </h5>
+            <p class="title-kampus">
+              <i class="fas fa-medal" id="medal"></i> Negeri
+            </p>
+            <button type="button" class="lihat-detail">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+          <div class="kampus-card" data-aos="fade-left">
+            <div class="ava-campus" id="kampus3">
+              <button type="button" class="like-button">
+                <i class="far fa-heart"></i>
+              </button>
+              <img class="logo-kampus" src="assets/images/logoitb.png">
+            </div>
+
+            <h6 class="label-akreditasi">
+              Akreditasi : A
+            </h6>
+            <h5 class="Nama-kampus">
+              Institut Teknologi Bandung
+            </h5>
+            <p class="title-kampus">
+              <i class="fas fa-medal" id="medal"></i> Negeri
+            </p>
+            <button type="button" class="lihat-detail">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+          <div class="kampus-card" data-aos="fade-left">
+            <div class="ava-campus" id="kampus3">
+              <button type="button" class="like-button">
+                <i class="far fa-heart"></i>
+              </button>
+              <img class="logo-kampus" src="assets/images/logoitb.png">
+            </div>
+
+            <h6 class="label-akreditasi">
+              Akreditasi : A
+            </h6>
+            <h5 class="Nama-kampus">
+              Institut Teknologi Bandung
+            </h5>
+            <p class="title-kampus">
+              <i class="fas fa-medal" id="medal"></i> Negeri
+            </p>
+            <button type="button" class="lihat-detail">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Lokasi Kampus Terpopuler -->
+        <div class="kampus-populer" id="judul">
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-9">
+              <h4 class="section-title--lined big-title">
+                <div id="app-3">
+                  {{ judul }}
+                </div>
+              </h4>
+            </div>
+            <div class="col-md-3">
+              <a href="#" class="lihat-semua-kampus">Lihat semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="card-lokasi">
+            <ul class="cards">
+              <li id="card2">
+                <a href="" class="card" data-aos="fade-down">
+                  <img src="assets/images/jakarta.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="">
+                        <h6 class="nama-kota">Jakarta</h6>
+                        <span class="card__status">Indonesia</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card__description">Kuliah di kampus kenamaan ibu kota dengan fasilitas lengkap dan
+                      kesempatan magang</p> -->
+                  </div>
+                </a>
+              </li>
+              <li id="card2">
+                <a href="" class="card" data-aos="fade-down">
+                  <img src="assets/images/medan.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="">
+                        <h6 class="nama-kota">Medan</h6>
+                        <span class="card__status">Indonesia</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card__description">Kuliah di kampus kenamaan ibu kota dengan fasilitas lengkap dan
+                      kesempatan magang</p> -->
+                  </div>
+                </a>
+              </li>
+              <li id="card2">
+                <a href="" class="card" data-aos="fade-down">
+                  <img src="assets/images/yogyakarta.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="">
+                        <h6 class="nama-kota">Yogyakarta</h6>
+                        <span class="card__status">Indonesia</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card__description">Kuliah di kampus kenamaan ibu kota dengan fasilitas lengkap dan
+                      kesempatan magang</p> -->
+                  </div>
+                </a>
+              </li>
+              <li id="card2">
+                <a href="" class="card" data-aos="fade-down">
+                  <img src="assets/images/bandung.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="">
+                        <h6 class="nama-kota">Bandung</h6>
+                        <span class="card__status">Indonesia</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card__description">Kuliah di kampus kenamaan ibu kota dengan fasilitas lengkap dan
+                      kesempatan magang</p> -->
+                  </div>
+                </a>
+              </li>
+
+              <li id="card2">
+                <a href="" class="card" data-aos="fade-up">
+                  <img src="assets/images/semarang.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="">
+                        <h6 class="nama-kota">Semarang</h6>
+                        <span class="card__status">Indonesia</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card__description">Kuliah di kampus kenamaan ibu kota dengan fasilitas lengkap dan
+                      kesempatan magang</p> -->
+                  </div>
+                </a>
+              </li>
+              <li id="card2">
+                <a href="" class="card" data-aos="fade-up">
+                  <img src="assets/images/malang.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="">
+                        <h6 class="nama-kota">Malang</h6>
+                        <span class="card__status">Indonesia</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card__description">Kuliah di kampus kenamaan ibu kota dengan fasilitas lengkap dan
+                      kesempatan magang</p> -->
+                  </div>
+                </a>
+              </li>
+              <li id="card2">
+                <a href="" class="card" data-aos="fade-up">
+                  <img src="assets/images/bali.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="">
+                        <h6 class="nama-kota">Bali</h6>
+                        <span class="card__status">Indonesia</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card__description">Kuliah di kampus kenamaan ibu kota dengan fasilitas lengkap dan
+                      kesempatan magang</p> -->
+                  </div>
+                </a>
+              </li>
+              <li id="card2">
+                <a href="" class="card" data-aos="fade-up">
+                  <img src="assets/images/surabaya.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path />
+                      </svg>
+                      <div class="">
+                        <h6 class="nama-kota">Surabaya</h6>
+                        <span class="card__status">Indonesia</span>
+                      </div>
+                    </div>
+                    <!-- <p class="card__description">Kuliah di kampus kenamaan ibu kota dengan fasilitas lengkap dan
+                      kesempatan magang</p> -->
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Info Seminar Beasiswa -->
+        <div class="info-seminar-beasiswa">
+          <div class="row" data-aos="fade-up" id="judul">
+            <div class="col-md-9">
+              <h4 class="section-title--lined big-title">
+                <div id="app-4">
+                  {{ judul }}
+                </div>
+              </h4>
+            </div>
+            <div class="col-md-3">
+              <a href="#" class="lihat-semua-kampus">Lihat semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="tab-info" data-aos="fade-up">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                  role="tab" aria-controls="home" aria-selected="true" style="font-weight: bold;">Seminar</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false" style="font-weight: bold;">Beasiswa</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="slider owl-carousel mt-3" id="test">
+                  <div class="card" >
+                    <div class="img"><img src="assets/images/info-1.png" alt=""></div>
+                    <div class="content">
+                      <h6 class="label-info">
+                        Seminar
+                      </h6>
+                      <div class="judul-info">Migrate Your Company</div>
+                      <h7>Oleh : Dicoding</h7>
+                      <p>
+                        <i class="fas fa-calendar"></i> 14 Juni 2021
+                      </p>
+                      <p>
+                        <i class="fas fa-map-marker-alt"></i> Zoom Meeting
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img"><img src="assets/images/info-2.png" alt=""></div>
+                    <div class="content">
+                      <h6 class="label-info">
+                        Workshop
+                      </h6>
+                      <div class="judul-info">Dicoding Developer Coaching</div>
+                      <h7>Oleh : Dicoding</h7>
+                      <p>
+                        <i class="fas fa-calendar"></i> 20 Juni 2021
+                      </p>
+                      <p>
+                        <i class="fas fa-map-marker-alt"></i> Zoom Meeting
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img"><img src="assets/images/info-3.png" alt=""></div>
+                    <div class="content">
+                      <h6 class="label-info">
+                        Seminar
+                      </h6>
+                      <div class="judul-info">Cloud Computing dengan AWS</div>
+                      <h7>Oleh : Dicoding</h7>
+                      <p>
+                        <i class="fas fa-calendar"></i> 25 Juni 2021
+                      </p>
+                      <p>
+                        <i class="fas fa-map-marker-alt"></i> Zoom Meeting
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="slider owl-carousel mt-3">
+                  <div class="card">
+                    <div class="img"><img src="assets/images/bidikmisi.jpg" alt=""></div>
+                    <div class="content">
+                      <h6 class="label-info">
+                        Nasional
+                      </h6>
+                      <div class="judul-info">Beasiswa Bidikmisi</div>
+                      <h7>Oleh : Pemerintah</h7>
+                      <p>
+                        <i class="fas fa-money-bill-wave"></i> Full + Uang Saku
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img"><img src="assets/images/tanoto.png" alt=""></div>
+                    <div class="content">
+                      <h6 class="label-info">
+                        Nasional
+                      </h6>
+                      <div class="judul-info">Beasiswa Tanoto</div>
+                      <h7>Oleh : Tanoto Foudation</h7>
+                      <p>
+                        <i class="fas fa-money-bill-wave"></i> Full + Uang Saku
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img"><img src="assets/images/oxfordBeasiswa.jpg" alt=""></div>
+                    <div class="content">
+                      <h6 class="label-info">
+                        Internasional
+                      </h6>
+                      <div class="judul-info">Oxford membuka Beasiswa</div>
+                      <h7>Oleh : Oxford Univerisity</h7>
+                      <p>
+                        <i class="fas fa-money-bill-wave"></i> Separuh
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artikel Terbaru  -->
+        <div class="artikel" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-9">
+              <h4 class="section-title--lined big-title">
+                <div id="app-5">
+                  {{ judul }}
+                </div>
+              </h4>
+            </div>
+            <div class="col-md-3">
+              <a href="#" class="lihat-semua-kampus">Lihat semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="new-artikel">
+            <div class="slider owl-carousel mt-3">
+              <div class="card">
+                <div class="img"><img src="assets/images/artikel-1.png" alt=""></div>
+                <div class="content">
+                  <h6 class="label-artikel">
+                    Teknologi
+                  </h6>
+                  <div class="judul-artikel">Kesalahan Umum Belajar Python</div>
+                  <p>
+                    <i class="fas fa-calendar"></i> 14 Juni 2021
+                  </p>
+                  <p>
+                    <i class="fas fa-eye"></i> 100 viewers
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img"><img src="assets/images/artikel-2.jpg" alt=""></div>
+                <div class="content">
+                  <h6 class="label-artikel">
+                    Pendidikan
+                  </h6>
+                  <div class="judul-artikel">4 Jitu Agar Lolos UTBK SBMPTN 2021 </div>
+                  <p>
+                    <i class="fas fa-calendar"></i> 19 Juni 2021
+                  </p>
+                  <p>
+                    <i class="fas fa-eye"></i> 1928 viewers
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img"><img src="assets/images/artikel-3.png" alt=""></div>
+                <div class="content">
+                  <h6 class="label-artikel">
+                    Pendidikan
+                  </h6>
+                  <div class="judul-artikel">Tips Belajar Efektif</div>
+                  <p>
+                    <i class="fas fa-calendar"></i> 10 Juni 2021
+                  </p>
+                  <p>
+                    <i class="fas fa-eye"></i> 630 viewers
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-s" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="section-title--lined big-title">
+                <div id="app-6">
+                  {{ judul }}
+                </div>
+              </h4>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class='faq'>
+              <input id='faq-a' type='checkbox'>
+              <label for='faq-a'>
+                <h6 class="faq-heading">Hello 1?</h6>
+                <div class='faq-arrow'></div>
+                <p class="faq-text">Ya</p>
+              </label>
+              <input id='faq-b' type='checkbox'>
+              <label for='faq-b'>
+                <h6 class="faq-heading">Hello 2?</h6>
+                <div class='faq-arrow'></div>
+                <p class="faq-text">Ya</p>
+              </label>
+              <input id='faq-c' type='checkbox'>
+              <label for='faq-c'>
+                <h6 class="faq-heading">Hello 3?</h6>
+                <div class='faq-arrow'></div>
+                <p class="faq-text">Ya</p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="section">
+          <h3>Kampus Indonesia</h3>
+          <p>Kami merupakan perusahaan dibidang <br> informasi seputas dunia perkuliahan yang <br> memberikan
+            informasi secara terupdate <br> dan dapat dipercaya sepenuhnya</p>
+          <h4>PT Inspirasi Mandiri Nusantara</h4>
+          <p>Kec Lowokwaru, Kota Malang, Jawa Timur
+          </p>
+          <h4>Telepon</h4>
+          <p>021 3425 2885</p>
+          <h4>Email</h4>
+          <p>info@kampusindonesia.co.id</p>
+        </div>
+        <div class="section">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li>
+              <a href="#">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="#">Hubungi kami</a>
+            </li>
+            <li>
+              <a href="#">Karir</a>
+            </li>
+            <li>
+              <a href="#">FeedBack</a>
+            </li>
+            <li>
+              <a href="#">Partner</a>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h4>Fitur</h4>
+          <ul>
+            <li>
+              <a href="#">Cari Kampus/Prodi</a>
+            </li>
+            <li>
+              <a href="#">Cari Seminar/Workshop</a>
+            </li>
+            <li>
+              <a href="#">Cari Beasiswa</a>
+            </li>
+            <li>
+              <a href="#">Cari Lomba</a>
+            </li>
+            <li>
+              <a href="#">Cari Lowongan</a>
+            </li>
+            <li>
+              <a href="#">UTBK</a>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h4>Lainnya</h4>
+          <ul>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Bantuan</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Vue JS -->
+  <script src="assets/js/vue.js"></script>
+  <script src="assets/js/vue.min.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app-1',
+      data: {
+        judul: 'Fitur Kampus Indonesia',
+      }
+    })
+
+    var app = new Vue({
+      el: '#app-2',
+      data: {
+        judul: 'Kampus Rekomendasi Kami'
+      }
+    })
+
+    var app = new Vue({
+      el: '#app-3',
+      data: {
+        judul: 'Lokasi Kampus Terpopuler'
+      }
+    })
+
+    var app = new Vue({
+      el: '#app-4',
+      data: {
+        judul: 'Informasi Seminar dan Beasiswa'
+      }
+    })
+
+    var app = new Vue({
+      el: '#app-5',
+      data: {
+        judul: 'Artikel Terbaru Kampus Indonesia'
+      }
+    })
+
+    var app = new Vue({
+      el: '#app-6',
+      data: {
+        judul: 'FAQ'
+      }
+    })
+  </script>
+
+  <!-- AOS -->
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000,
+    });
+  </script>
+
+  <!-- JQuery -->
+  <script src="assets/js/jquery-3.5.1.js"></script>
+
+  <!-- Carousel -->
+  <script src="assets/js/owl.carousel.min.js"></script>
+
+  <script>
+    $(".slider").owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000, //2000ms = 2s;
+      autoplayHoverPause: true,
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="assets/fontawesome/js/all.js">
+
+  <!-- Bootstrap JS -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Vue JS -->
+  <script type="text/javascript" src="assets/js/vue.js"></script>
+  <script type="text/javascript" src="assets/js/vue.min.js"></script>
+</body>
+
+</html>
