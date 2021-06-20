@@ -1,5 +1,4 @@
 # Penugasan Divisi FrontEnd Kampus Indonesia
-This is one of the projects in the Distributed Application Development course that applies SOA concepts to application.
 
 ### Using :
 
